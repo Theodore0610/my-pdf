@@ -10,7 +10,7 @@ st.title("📚 我的 AI PDF 电子书助手")
 # 2. 侧边栏配置 API Key (上线后建议填入 Secrets)
 with st.sidebar:
     api_key = st.text_input("请输入智谱 API Key", type="password")
-    uploaded_file = st.file_input("上传 PDF 电子书", type="pdf")
+    uploaded_file = st.file_uploader("上传 PDF 电子书", type="pdf")
 
 # 3. 主界面布局：左边 PDF，右边 AI
 col1, col2 = st.columns(2)
